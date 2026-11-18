@@ -70,3 +70,21 @@ Route::get('/reset-password', function () {
 Route::get('/error', function () {
     return view('home.error');
 })->name('error');
+
+use App\Http\Controllers\ReporteController;
+
+// Registro de reportes
+Route::get('/reportes', [ReporteController::class, 'index'])
+    ->name('reportes.index');
+
+Route::post('/reportes', [ReporteController::class, 'store'])
+    ->name('reportes.store');
+
+// Confirmación y validación mediante enlace firmado
+Route::get('/reportes/{reporte}/confirmar', [ReporteController::class, 'confirmar'])
+    ->middleware('signed')
+    ->name('reportes.confirmar');
+
+Route::post('/reportes/{reporte}/validar', [ReporteController::class, 'validar'])
+    ->middleware('signed')
+    ->name('reportes.validar');

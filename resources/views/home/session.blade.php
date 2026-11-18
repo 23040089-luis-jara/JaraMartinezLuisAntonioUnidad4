@@ -72,7 +72,11 @@ document.onscroll = reiniciarTimer;
                     Asistente
                     </a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="misdoc.php">Mis Enviados</a></li>
+                <li class="nav-item">
+    <a class="nav-link" href="{{ route('reportes.index') }}">
+        Registros
+    </a>
+</li>
                 <li class="nav-item"><a class="nav-link" href="enviarpdf.php">¡Enviar Formato!</a></li>
                 <li class="nav-item"><form id="logoutForm" method="POST" action="{{ route('logout') }}">
                                         @csrf
