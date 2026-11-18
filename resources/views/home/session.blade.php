@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Index Humanidades" name="keywords">
     <meta content="Medicina Investigación" name="description">
-    <title>Página Facultad Medicina U A de C</title>
+    <title>Reporte de Computadoras U A de C</title>
     <!-- Favicon -->
     <link rel="icon" href="../images/Icon.jpg" type="image/png">
     <!-- Bootstrap Stylesheet -->
@@ -24,19 +24,23 @@
 @endif
 
 <script>
-let tiempoInactividad = 600000; // 10 minutos en ms
+let tiempoInactividad = 600000;
 
-let timer = setTimeout(() => {
-    window.location.href = "logout.php";
-}, tiempoInactividad);
+let timer = setTimeout(cerrarSesion, tiempoInactividad);
 
-// Reinicia el timer si el usuario mueve el mouse o presiona una tecla
-document.onmousemove = document.onkeypress = () => {
+function reiniciarTimer() {
     clearTimeout(timer);
-    timer = setTimeout(() => {
-        window.location.href = "logout.php";
-    }, tiempoInactividad);
-};
+    timer = setTimeout(cerrarSesion, tiempoInactividad);
+}
+
+function cerrarSesion() {
+    document.getElementById('logoutForm').submit();
+}
+
+document.onmousemove = reiniciarTimer;
+document.onkeypress = reiniciarTimer;
+document.onclick = reiniciarTimer;
+document.onscroll = reiniciarTimer;
 </script>
 
 </head>
@@ -70,19 +74,11 @@ document.onmousemove = document.onkeypress = () => {
                 </li>
                 <li class="nav-item"><a class="nav-link" href="misdoc.php">Mis Enviados</a></li>
                 <li class="nav-item"><a class="nav-link" href="enviarpdf.php">¡Enviar Formato!</a></li>
-                <li class="nav-item"><form method="POST"
-                                        action="{{ route('logout') }}">
-
+                <li class="nav-item"><form id="logoutForm" method="POST" action="{{ route('logout') }}">
                                         @csrf
-
-                                        <button
-                                            type="submit"
-                                            class="nav-link border-0 bg-transparent">
-
+                                        <button type="submit" class="nav-link border-0 bg-transparent">
                                             Cerrar Sesión
-
                                         </button>
-
                                     </form></li>
             </ul>
         </div>
@@ -249,7 +245,7 @@ document.onmousemove = document.onkeypress = () => {
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 <script>
 
 function enviarMensaje()
