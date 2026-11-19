@@ -44,7 +44,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('session') }}">
-                        Inicio
+                        Home
                     </a>
                 </li>
 
