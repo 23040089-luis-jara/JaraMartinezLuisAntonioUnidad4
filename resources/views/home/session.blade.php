@@ -74,7 +74,7 @@ document.onscroll = reiniciarTimer;
                 </li>
                 <li class="nav-item">
     <a class="nav-link" href="{{ route('reportes.index') }}">
-        Registros
+        Registro de Reportes
     </a>
 </li>
                 <li class="nav-item"><a class="nav-link" href="enviarpdf.php">¡Enviar Formato!</a></li>
@@ -151,67 +151,69 @@ document.onscroll = reiniciarTimer;
 <div class="container mt-4">
     <div class="row">
 
-        <!-- Hepatitis A -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow h-100">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Hepatitis A
-                    </h5>
+<!-- Fallas de Hardware -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow h-100">
+        <div class="card-body">
+            <h5 class="card-title">
+                Fallas de Hardware
+            </h5>
 
-                    <p class="card-text">
-                        La hepatitis A es una enfermedad infecciosa causada por el virus
-                        de la hepatitis A, el cual afecta directamente al hígado. Se
-                        transmite principalmente por el consumo de alimentos o agua
-                        contaminados, así como por el contacto cercano con personas
-                        infectadas. Esta enfermedad provoca inflamación hepática y puede
-                        dificultar que el organismo elimine adecuadamente toxinas y procese
-                        nutrientes esenciales.
-                    </p>
+            <p class="card-text">
+                Las fallas de hardware son problemas que se presentan en los
+                componentes físicos de una computadora, como el disco duro,
+                memoria RAM, procesador, tarjeta madre, fuente de alimentación
+                y dispositivos periféricos. Estas fallas pueden originarse
+                por el desgaste de los componentes, sobrecalentamiento,
+                acumulación de polvo, golpes o conexiones incorrectas.
+            </p>
 
-                    <p class="card-text">
-                        Entre los síntomas más frecuentes se encuentran la fatiga,
-                        fiebre, pérdida del apetito, náuseas, dolor abdominal e ictericia,
-                        que provoca una coloración amarillenta en la piel y los ojos.
-                        Aunque la mayoría de las personas se recuperan completamente,
-                        algunos pacientes pueden presentar complicaciones graves,
-                        especialmente si tienen enfermedades hepáticas previas.
-                    </p>
-                </div>
-            </div>
+            <p class="card-text">
+                Entre los problemas más frecuentes se encuentran que la
+                computadora no encienda, que se reinicie inesperadamente,
+                que presente pantallas azules, ruidos extraños o que no
+                reconozca algunos dispositivos. Para solucionarlos es
+                necesario realizar una revisión física, comprobar las
+                conexiones y, cuando sea necesario, reemplazar el componente
+                dañado para recuperar el funcionamiento del equipo.
+            </p>
         </div>
-
-        <!-- Hepatitis B -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow h-100">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Hepatitis B
-                    </h5>
-
-                    <p class="card-text">
-                        La hepatitis B es una infección viral que se transmite mediante
-                        sangre, fluidos corporales, relaciones sexuales sin protección o
-                        de madre a hijo durante el parto. El virus ataca las células del
-                        hígado, generando inflamación y afectando funciones esenciales
-                        como la producción de proteínas, el almacenamiento de energía y
-                        la eliminación de sustancias tóxicas.
-                    </p>
-
-                    <p class="card-text">
-                        Esta enfermedad puede presentarse de forma aguda o convertirse en
-                        una infección crónica. Cuando permanece durante años en el
-                        organismo, aumenta el riesgo de desarrollar cirrosis, insuficiencia
-                        hepática y cáncer de hígado. Los síntomas más comunes incluyen
-                        cansancio extremo, fiebre, dolor articular, náuseas, pérdida del
-                        apetito e ictericia, aunque algunas personas pueden no presentar
-                        síntomas durante largos periodos.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
+</div>
+
+<!-- Fallas de Software -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow h-100">
+        <div class="card-body">
+            <h5 class="card-title">
+                Fallas de Software
+            </h5>
+
+            <p class="card-text">
+                Las fallas de software son errores relacionados con los
+                programas, sistemas operativos y aplicaciones instaladas
+                en una computadora. Pueden producirse por archivos dañados,
+                instalaciones incorrectas, incompatibilidad entre programas,
+                virus informáticos o actualizaciones incompletas. Estos
+                problemas afectan el funcionamiento del equipo sin que
+                necesariamente exista un daño en sus componentes físicos.
+            </p>
+
+            <p class="card-text">
+                Algunos de los síntomas más comunes son que los programas
+                dejen de responder, que el sistema operativo tarde demasiado
+                en iniciar, que aparezcan mensajes de error, cierres
+                inesperados o dificultades para conectarse a internet.
+                Para solucionar estas fallas se pueden actualizar los
+                programas, analizar el equipo con un antivirus, reparar
+                archivos del sistema o reinstalar las aplicaciones que
+                presenten problemas.
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
 </div>
 
 <!-- Contenido -->
